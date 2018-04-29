@@ -196,7 +196,7 @@ img {
     height: 670px;
     position: relative;
     overflow: hidden;
-    background: url(https://exoplanet.top/t/1/img/tbg.jpg) no-repeat top #4c4c4c;
+    background: url(https://s19.postimg.cc/tba2egh1f/topbackground.jpg) no-repeat top #4c4c4c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: -2px;
@@ -508,13 +508,13 @@ img {
     /*background-attachment: fixed;*/
     background-position: top center;
     background-color: #979797;
-    background-image: url(https://exoplanet.top/t/1/img/b.jpg);
+    background-image: url(https://s19.postimg.cc/gwnae8cpf/bar.jpg);
 }
 .exop .sban * {
     z-index: 2;
 }
 .exop .drkr {
-    background-image: url(https://exoplanet.top/t/1/img/tbg.jpg);
+    background-image: url(https://s19.postimg.cc/tba2egh1f/topbackground.jpg);
     opacity: .2;
     position: absolute;
     z-index: 0;
@@ -739,13 +739,13 @@ img {
     background-attachment: fixed;
     background-position: top center;
     background-color: #979797;
-    background-image: url(https://exoplanet.top/t/1/img/b.jpg);
+    background-image: url(https://s19.postimg.cc/gwnae8cpf/bar.jpg);
 }
 .exop .fdbk * {
     z-index: 2;
 }
 .exop .fbk {
-    background-image: url(https://exoplanet.top/t/1/img/fbg.jpg);
+    background-image: url(https://s19.postimg.cc/bxzrzpoc3/middlebackground.jpg);
     opacity: .2;
     position: absolute;
     z-index: 0;
@@ -918,7 +918,7 @@ img {
     height: 100%;
 }
 .exop .ftrbg {
-    background: url(https://exoplanet.top/t/1/img/fobg.jpg) no-repeat bottom right #333;
+    background: url(https://s19.postimg.cc/7c3nrffoj/footerbackground.jpg) no-repeat bottom right #333;
     opacity: 1;
     height: 215px;
 }
