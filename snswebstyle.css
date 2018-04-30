@@ -749,6 +749,8 @@ img {
     opacity: .2;
     position: absolute;
     z-index: 0;
+	height: 1200px;
+    width: 1200%;
 }
 .exop .fdbk h3:before {
     width: 3px;
