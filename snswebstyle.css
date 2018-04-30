@@ -745,12 +745,10 @@ img {
     z-index: 2;
 }
 .exop .fbk {
-    background-image: url(https://s19.postimg.cc/bxzrzpoc3/middlebackground.jpg);
+    background-image: url(https://s19.postimg.cc/zc7rbn69d/middlebackground.jpg);
     opacity: .2;
     position: absolute;
     z-index: 0;
-	height: 1200px;
-    width: 1200%;
 }
 .exop .fdbk h3:before {
     width: 3px;
