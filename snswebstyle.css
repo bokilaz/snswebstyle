@@ -186,7 +186,7 @@ img {
 
 
 
-/* NEW */
+/* NEW TOP BACKGROUND */
 .exop .lnr {
     line-height: 1;
 }
@@ -345,6 +345,8 @@ img {
     height: 46px;
     margin-left: -60px;
 }
+/* NEW TOP BACKGROUND */
+
 
 /* LOGO WITH RIGHT TOP MENU */
 .exop div.cont {
@@ -514,7 +516,7 @@ img {
     z-index: 2;
 }
 .exop .drkr {
-    background-image: url(https://s19.postimg.cc/tba2egh1f/topbackground.jpg);
+    background-image: url(https://s19.postimg.cc/9akw3cepf/shopbannerbackground.jpg);
     opacity: .2;
     position: absolute;
     z-index: 0;
@@ -525,7 +527,7 @@ img {
 .exop .sban .bphoto {
     height: 100%;
     width: 100%;
-    background: url(https://s19.postimg.cc/zc7rbn69d/middlebackground.jpg) no-repeat left bottom;
+    background: url(https://exoplanet.top/t/1/img/bphoto.png) no-repeat left bottom;
     position: absolute;
 }
 .exop .sban .bicon {
