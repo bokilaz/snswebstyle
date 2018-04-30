@@ -1,0 +1,1051 @@
+<style>
+
+html { font-size: 100%; }
+
+/* exoplanet.top and bootstrap */
+.exop.container, .exop.container-fluid {
+  font-family: Catamaran, "Open Sans", "Segoe UI", "Calibri Light", Calibri, Verdana, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.42857143;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+.exop.container-fluid {
+    background: #f5f5f5;
+    max-width: 1200px;
+}
+@media (max-width: 650px) {
+    .exop.container, .exop.container-fluid {
+        font-size: 1rem;
+    }
+}
+.exop a {
+  color: #584f95;
+  text-decoration: none;
+}
+.exop a:hover,
+.exop a:focus {
+  color: #584f95;
+  text-decoration: underline;
+}
+.exop a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.exop b {
+    font-weight: 500;
+}
+.exop p, .exop li {font-size: 1em}
+.exop ul {
+    padding-left: 30px;
+}
+.exop ul li {
+    list-style-type: none;
+}
+.exop ul li:before {
+    content: "•";
+    font-weight: 500;
+    font-size: 3em;
+    color: #584f95;
+    top: -24px;
+    left: -25px;
+    position: absolute;
+}
+@media (min-width: 768px) {
+    .exop .right ul {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .exop .right ul li:before {
+        left: auto;
+        right: -25px;
+    }
+}
+.exop h2 {font-size: 3.1em;text-align: left;font-weight: 100;margin: 0;line-height: 1em;}
+.exop h3 {font-size: 2.111em;font-weight: 100;margin: 0;line-height: 1em;}
+.exop h3 > small {font-size: 0.75em;display: block;}
+.exop h4 {font-size: 1.5em;text-align: left;font-weight: 100;margin: 0;}
+.exop h4 small {font-size: 0.8em;display: block;}
+.exop h5 {font-size: 1.25em;margin: 0;font-weight: 100}
+.exop h6 {font-size: 1em;font-weight: 400;margin: 0;}
+.exop .clear {clear: both;}
+.exop .gap {height: 30px;}
+img {
+    max-width: 100%;
+}
+.exop table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.exop td,
+.exop th {
+  padding: 0;
+}
+.exop, .exop * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;
+}
+.exop *:before,
+.exop *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;
+}
+.exop img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+.exop .img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.exop .img-rounded {
+  border-radius: 6px;
+}
+.exop .img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.exop .img-circle {
+  border-radius: 50%;
+}
+.exop hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.exop .clearfix:before,
+.exop .clearfix:after,
+.exop .container:before,
+.exop .container:after,
+.exop .container-fluid:before,
+.exop .container-fluid:after,
+.exop .row:before,
+.exop .row:after {
+  content: "";
+  display: block;
+}
+.exop .clearfix:after,
+.exop .container:after,
+.exop .container-fluid:after,
+.exop .row:after {
+  clear: both;
+}
+.exop .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.exop .center {
+    text-align: center;
+}
+.exop .right {
+    text-align: right;
+}
+.exop .hide {
+  display: none !important;
+}
+.exop .show {
+  display: block !important;
+}
+.exop .invisible {
+  visibility: hidden;
+}
+.exop .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.exop .hidden {
+  display: none !important;
+}
+
+    /* grid */
+.exop.container { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; } @media (min-width: 768px) { .exop.container { width: 750px; } } @media (min-width: 992px) { .exop.container { width: 970px; } } @media (min-width: 1200px) { .exop.container { width: 1170px; } } .exop.container-fluid { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; } .exop .row { margin-left: -15px; margin-right: -15px; }.exop .col-xs-1,.exop .col-sm-1,.exop .col-md-1,.exop .col-lg-1,.exop .col-xs-2,.exop .col-sm-2,.exop .col-md-2,.exop .col-lg-2,.exop .col-xs-3,.exop .col-sm-3,.exop .col-md-3,.exop .col-lg-3,.exop .col-xs-4,.exop .col-sm-4,.exop .col-md-4,.exop .col-lg-4,.exop .col-xs-5,.exop .col-sm-5,.exop .col-md-5,.exop .col-lg-5,.exop .col-xs-6,.exop .col-sm-6,.exop .col-md-6,.exop .col-lg-6,.exop .col-xs-7,.exop .col-sm-7,.exop .col-md-7,.exop .col-lg-7,.exop .col-xs-8,.exop .col-sm-8,.exop .col-md-8,.exop .col-lg-8,.exop .col-xs-9,.exop .col-sm-9,.exop .col-md-9,.exop .col-lg-9,.exop .col-xs-10,.exop .col-sm-10,.exop .col-md-10,.exop .col-lg-10,.exop .col-xs-11,.exop .col-sm-11,.exop .col-md-11,.exop .col-lg-11,.exop .col-xs-12,.exop .col-sm-12,.exop .col-md-12,.exop .col-lg-12 { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }.exop .col-xs-1,.exop .col-xs-2,.exop .col-xs-3,.exop .col-xs-4,.exop .col-xs-5,.exop .col-xs-6,.exop .col-xs-7,.exop .col-xs-8,.exop .col-xs-9,.exop .col-xs-10,.exop .col-xs-11,.exop .col-xs-12 { float: left; }.exop .col-xs-12 { width: 100%; }.exop .col-xs-11 { width: 91.66666667%; }.exop .col-xs-10 { width: 83.33333333%; }.exop .col-xs-9 { width: 75%; }.exop .col-xs-8 { width: 66.66666667%; }.exop .col-xs-7 { width: 58.33333333%; }.exop .col-xs-6 { width: 50%; }.exop .col-xs-5 { width: 41.66666667%; }.exop .col-xs-4 { width: 33.33333333%; }.exop .col-xs-3 { width: 25%; }.exop .col-xs-2 { width: 16.66666667%; }.exop .col-xs-1 { width: 8.33333333%; } @media (min-width: 768px) {.exop .col-sm-1,.exop .col-sm-2,.exop .col-sm-3,.exop .col-sm-4,.exop .col-sm-5,.exop .col-sm-6,.exop .col-sm-7,.exop .col-sm-8,.exop .col-sm-9,.exop .col-sm-10,.exop .col-sm-11,.exop .col-sm-12 { float: left; }.exop .col-sm-12 { width: 100%; }.exop .col-sm-11 { width: 91.66666667%; }.exop .col-sm-10 { width: 83.33333333%; }.exop .col-sm-9 { width: 75%; }.exop .col-sm-8 { width: 66.66666667%; }.exop .col-sm-7 { width: 58.33333333%; }.exop .col-sm-6 { width: 50%; }.exop .col-sm-5 { width: 41.66666667%; }.exop .col-sm-4 { width: 33.33333333%; }.exop .col-sm-3 { width: 25%; }.exop .col-sm-2 { width: 16.66666667%; }.exop .col-sm-1 { width: 8.33333333%; } } @media (min-width: 992px) {.exop .col-md-1,.exop .col-md-2,.exop .col-md-3,.exop .col-md-4,.exop .col-md-5,.exop .col-md-6,.exop .col-md-7,.exop .col-md-8,.exop .col-md-9,.exop .col-md-10,.exop .col-md-11,.exop .col-md-12 { float: left; }.exop .col-md-12 { width: 100%; }.exop .col-md-11 { width: 91.66666667%; }.exop .col-md-10 { width: 83.33333333%; }.exop .col-md-9 { width: 75%; }.exop .col-md-8 { width: 66.66666667%; }.exop .col-md-7 { width: 58.33333333%; }.exop .col-md-6 { width: 50%; }.exop .col-md-5 { width: 41.66666667%; }.exop .col-md-4 { width: 33.33333333%; }.exop .col-md-3 { width: 25%; }.exop .col-md-2 { width: 16.66666667%; }.exop .col-md-1 { width: 8.33333333%; } } @media (min-width: 1200px) {.exop .col-lg-1,.exop .col-lg-2,.exop .col-lg-3,.exop .col-lg-4,.exop .col-lg-5,.exop .col-lg-6,.exop .col-lg-7,.exop .col-lg-8,.exop .col-lg-9,.exop .col-lg-10,.exop .col-lg-11,.exop .col-lg-12 { float: left; }.exop .col-lg-12 { width: 100%; }.exop .col-lg-11 { width: 91.66666667%; }.exop .col-lg-10 { width: 83.33333333%; }.exop .col-lg-9 { width: 75%; }.exop .col-lg-8 { width: 66.66666667%; }.exop .col-lg-7 { width: 58.33333333%; }.exop .col-lg-6 { width: 50%; }.exop .col-lg-5 { width: 41.66666667%; }.exop .col-lg-4 { width: 33.33333333%; }.exop .col-lg-3 { width: 25%; }.exop .col-lg-2 { width: 16.66666667%; }.exop .col-lg-1 { width: 8.33333333%; } }
+    /* grid */
+
+/* exoplanet.top and bootstrap */
+
+
+
+/* NEW */
+.exop .lnr {
+    line-height: 1;
+}
+
+.exop .col970 {max-width: 970px;width: 100%;float: none;display: block;margin:auto;clear:both;}
+.exop .st {
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+    background: url(https://s19.postimg.cc/tba2egh1f/topbackground.jpg) no-repeat top #4c4c4c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -2px;
+}
+.exop .st h2 {
+    margin-bottom: -11px;
+}
+.exop .st h3 {
+    margin-left: 10px;
+    font-size: 1.11em;
+    text-align: left;
+    font-weight: 100;
+}
+.exop .st h3:before,
+.exop .fdbk h3:before {
+    content: " ";
+    width: 3px;
+    height: 100%;
+    background: #6dcff6;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+}
+.exop .cut {
+    background: #f5f5f5;
+    width: 2000px;
+    height: 1000px;
+    position: absolute;
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+    top: 397px;
+    left: 0;
+}
+.exop .tm {
+    z-index: 2;
+    height: 540px;
+    display: table;
+    width: 100%;
+}
+.exop .tm > div {
+    display: table-cell;
+    float:none;
+    vertical-align: middle;
+}
+.exop .st .photo-main img {
+    transform: scale(0.8) rotate(0deg);
+    max-height: 580px;
+    max-width: 100%;
+}
+.exop .st:hover .photo-main img {
+    transform: scale(1) rotate(3deg);
+}
+@media (max-width: 1200px) {
+    .exop .cut {
+        top: 360px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+    .exop .tm > .photo-main {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 992px) {
+    .exop .cut {
+        top: 300px;
+    }
+    
+    .exop .tm {
+        height: 340px;
+    }
+    .exop .tm h2 {
+        font-size: 2.22em;
+    }
+    .exop .st .photo-main img {
+        max-height: 450px;
+    }
+}
+@media (max-width: 768px) {
+    .exop .st .photo-main img {
+        max-height: 400px;
+    }
+}
+@media (max-width: 650px) {
+    .exop .tm h2 {
+        font-size: 1.51em;
+    }
+    .exop .tm h3 {
+        font-size: 1em;
+    }
+
+    .exop .st .photo-main img {
+        max-height: 300px;
+    }
+}
+@media (max-width: 650px) {
+    .exop .st {
+        height: 570px;
+    }
+    .exop .cut {
+        top: 280px;
+    }
+}
+.exop .drkbg, .exop .drkbg a, .exop .drkbg a:hover {
+    color: white;
+}
+.exop .mlnks a {
+    padding: 0 10px;
+    white-space: nowrap;
+    line-height: 2rem;
+    display: inline-block;
+    font-size: 1.125rem;
+}
+.exop .mlnks a:hover {
+    text-decoration: none;
+}
+.exop .mlnks a:before {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background: #6dcff6;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: -5px;
+}
+.exop .mlnks a:hover:before {
+    width: 100%;
+    left: 0%;
+}
+@media (max-width: 768px) {
+    .exop .mlnks a:before {
+        top: 0px;
+    }
+}
+.exop .mrgnbtm {
+     margin-bottom: 70px;
+}
+.exop .pulse,
+.exop .pulse-top {
+    width: 181px;
+    height: 46px;
+    margin-left: -60px;
+}
+
+/* LOGO WITH RIGHT TOP MENU */
+.exop div.cont {
+    display: table;
+    width: 100%;
+}
+.exop div.cent {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    text-align: right;
+}
+.exop div.cent > div {
+    float: right;
+}
+@media (max-width: 992px) {
+    .exop div.cont {
+        display: block;
+        float:left;
+    }
+    .exop div.cent {
+        display: block;
+        float:left;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .exop div.cent > div {
+        float: none;
+    }
+}
+@media (max-width: 400px) {
+    .exop .tm > div.photo-main { 
+        display: none;
+    }
+    .exop .tm > div {
+        vertical-align: top;
+    }
+    .exop .cut {
+        top: 220px;
+    }
+    .exop .st {
+        height: 440px;
+    }
+    .exop .cont {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+}
+/* LOGO WITH RIGHT TOP MENU */
+
+
+
+/* company advantages */
+.exop .cad {
+    background: #f5f5f5;
+    font-size: 1em;
+    padding-bottom: 60px;
+}
+.exop .cad .i {
+    color: #584f95;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.exop .cad .i .lnr:before {
+    font-size: 60px;
+    font-size: 60px;
+    display: block;
+    height: 40px;
+}
+.exop .cad .oa {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.exop .cad .oa:hover .i {
+    transform: scale(1.2);
+}
+.exop .cad .i ~ span {
+    padding-top: 20px;
+    display: block;
+}
+@media (max-width: 768px) {
+    .exop .cad {
+        display: none;
+    }
+}
+/* company advantages */
+
+/* DESCRIPTION */
+.exop .desc {
+    background-color: #f5f5f5;
+}
+.exop .desc h3:before {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: -10px;
+    top: -4px;
+    background: #6dcff6;
+}
+.exop .desc .right h3:before {
+    left: initial;
+    right: -10px;
+    top: -1px;
+}
+.exop .desc > div {
+    margin: 30px auto;
+    display: table;
+}
+.exop .desc > div > div {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+.exop .desc > div:after,
+.exop .desc > div:before {
+    clear: both;
+}
+@media (max-width: 768px) {
+    .exop .desc > div {
+        margin: 0px auto;
+        display: block;
+    }
+    .exop .desc > div > div {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+    .exop .desc img {
+        max-height: 200px;
+        margin-bottom: 20px;
+    }
+    .exop .desc .chordr .right h3:before {
+        right: initial;
+        left: -10px;
+        top: -4px;
+    }
+    .exop .right {
+        text-align: left;
+    }
+}
+@media (min-width: 768px) {
+    .exop .desc .chordr .col-sm-4 {left:66.66666667%}
+    .exop .desc .chordr .col-sm-8 {right:33.33333334%}
+}
+.exop span.red {color: red}
+.exop span.blue {color: blue}
+.exop span.green {color: green}
+.exop span.yellow {color: yellow}
+.exop span.black {color: black}
+/* DESCRIPTION */
+
+/* SHOP BANNER */
+.exop .sban,
+.exop .drkr {
+    height: 325px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /*background-attachment: fixed;*/
+    background-position: top center;
+    background-color: #979797;
+    background-image: url(https://s19.postimg.cc/gwnae8cpf/bar.jpg);
+}
+.exop .sban * {
+    z-index: 2;
+}
+.exop .drkr {
+    background-image: url(https://s19.postimg.cc/tba2egh1f/topbackground.jpg);
+    opacity: .2;
+    position: absolute;
+    z-index: 0;
+}
+.exop .sban h4 {
+    text-align: center;
+}
+.exop .sban .bphoto {
+    height: 100%;
+    width: 100%;
+    background: url(https://exoplanet.top/t/1/img/bphoto.png) no-repeat left bottom;
+    position: absolute;
+}
+.exop .sban .bicon {
+    border: 1px solid rgba(255,255,255,0.40);
+    border-radius: 50%;
+    width: 196px;
+    height: 196px;
+    position: absolute;
+    right: 9px;
+    top: 78px;
+}
+.exop .sban .bicon .lnr {
+    font-size: 120px;
+    top: 35px;
+    left: 3px;
+    color: rgba(255,255,255,.8);
+}
+.exop .lnr-chevron-right:before {
+    font-size: 13px;
+}
+.exop .sban .sbtn {
+    padding: 10px 20px;
+    margin: 40px 0;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 10px;
+    background: rgba(255,255,255,.1);
+    display: inline-block;
+}
+.exop .sban .sbtn:hover,
+.exop .sban .sbtn:focus {
+    text-decoration: none;;
+    background: rgba(255,255,255,.3);
+    color: white;
+}
+.exop .sbtn:hover .lnr-chevron-right:before {
+    margin-left: 10px;
+}
+@media (max-width: 992px) {
+    .exop .sban .bicon,
+    .exop .sban .bphoto {
+        display: none;
+    }
+}
+/* SHOP BANNER */
+
+/* TITLE */
+.exop .tit {
+    width: 100%;
+    padding: 0 100px;
+}
+@media (max-width: 768px) {
+    .exop h3 {
+        font-size: 1.77em;
+        font-weight: 300;
+    }
+}
+@media (max-width: 500px) {
+    .exop h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+}
+/* TITLE */
+
+
+
+/* IMAGE GALLERY */
+
+.exop .sgal img {
+    max-width: none;
+    max-height: none;
+}
+.exop .sgal .pictures {
+    width: 100%;
+    max-width: 970px;
+    margin: auto;
+    position: relative;
+}
+.exop .sgal .pictures .left {
+    float: left;
+    width: 325px;
+    height: 480px;
+}
+.exop .sgal .pictures .left img:nth-child(odd) {
+    width: 150px;
+    height: 112px;
+    margin: 0px 10px 10px 0;
+    z-index: 2;
+    position: relative;
+    border: 1px solid #d8d8d8;
+    opacity: 0.9;
+    transform: scale(0.9);
+    cursor: pointer;
+    outline: none;
+}
+.exop .sgal .pictures .left img:nth-child(odd):hover,
+.exop .sgal .pictures .left img:nth-child(odd):focus {
+    -webkit-box-shadow: 0px 15px 23px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 23px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 23px -11px rgba(0,0,0,0.75);
+    opacity: 1;
+    transform: scale(1);
+}
+.exop .sgal .left img:nth-child(odd):focus ~ img:last-child {
+    opacity: 0;
+    transform: scale(0.6);
+}
+.exop .sgal .pictures .left img:nth-child(odd):focus + img {
+    opacity: 1;
+    transform: scale(1);
+}
+.exop .sgal .pictures .left img:nth-child(even) {
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    left: 330px;
+    top: 0px;
+    opacity: 0;
+    transform: scale(0.6);
+    border: 1px solid #d8d8d8;
+        
+}
+.exop .sgal .pictures .left img:nth-child(2) {
+    opacity: 0;
+}
+.exop .sgal .pictures .left img:last-child {
+    opacity: 1;
+    transform: scale(1);
+}
+@media (max-width: 992px) {
+    .exop .sgal .pictures .left {
+        width: 100%;
+        text-align: center;
+    }
+    .exop .sgal .pictures .left img:nth-child(odd) {
+        margin: 0;
+    }
+    .exop .sgal .pictures .left img:nth-child(even) {
+        left: 55px;
+        top: 230px;
+    }
+    .exop .sgal .pictures .left {
+        height: 710px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .exop .sgal .pictures .left {
+        width: 750px;
+        margin: auto;
+        float: none;
+    }
+}
+@media (max-width: 768px) {
+    .exop .sgal .pictures .left img:nth-child(even) {
+        display: none;
+    }
+    .exop .sgal .pictures .left {
+        height: auto;
+    }
+    .exop .sgal .pictures .left img:nth-child(odd) {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        opacity: 1;
+        transform: scale(1);
+        margin-bottom: 10px;
+    }
+}
+/* IMAGE GALLERY */
+
+
+
+/* TABLES */
+.exop table {
+    font-size: 1em;
+    width: 100%;
+    font-weight: 300;
+    color: #5c5c5c;
+}
+.exop thead {
+    text-align: center;
+}
+.exop td {
+    border: 1px solid #d8d8d8;
+    padding: 5px 20px;
+    line-height: 1.2em;
+}
+.exop tr:nth-child(2n) td {
+    background: #ededed;
+}
+.exop table.ttech td:first-child {
+    font-weight: 400;
+    text-align: right;
+}
+@media (max-width: 768px) {
+    .exop td {
+        padding: 5px 10px;
+    }
+}
+/* TABLES */
+
+
+
+/* FEEDABACK */
+.exop .fdbk,
+.exop .fbk {
+    height: 470px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: top center;
+    background-color: #979797;
+    background-image: url(https://s19.postimg.cc/gwnae8cpf/bar.jpg);
+}
+.exop .fdbk * {
+    z-index: 2;
+}
+.exop .fbk {
+    background-image: url(https://s19.postimg.cc/zc7rbn69d/middlebackground.jpg);
+    opacity: .2;
+    position: absolute;
+    z-index: 0;
+}
+.exop .fdbk h3:before {
+    width: 3px;
+    height: 40px;
+    margin: -8px 0;
+    position: relative;
+    display: inline-block;
+}
+.exop .fdbk .fk {
+    width: 450px;
+    min-height: 160px;
+    background: #d7d7d7;
+    opacity: .9;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #000;
+    padding: 20px;
+    font-weight: 300;
+}
+.exop .fdbk .fk span:first-child {
+    display: block;
+    margin-bottom: 30px;
+}
+.exop .fdbk .fk span:last-child {
+    font-weight: 400;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+.exop .fdbk .fk span:last-child:before {
+    content: " ";
+    background: #9556d4;
+    width: 20px;
+    height: 3px;
+    margin: 4px;
+    position: relative;
+    display: inline-block;
+}
+.exop .fdbk .fk span:last-child img {
+    padding-bottom: 7px;
+}
+.exop .fdbk .fk span:last-child img:first-child {
+    padding-left: 10px;
+}
+
+.exop .fdbk .fk {
+    position: absolute;
+    left: calc(50% - 225px);
+    top: 160px;
+}
+.exop .fdot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 260px;
+    cursor: pointer;
+    outline: none;
+    float: right;
+    margin-left: 10px;
+    right: calc(50% - 30px);
+}
+.exop .fdot:last-of-type {
+    background: white;
+}
+.exop .fdot:focus {
+    background: white;
+}
+.exop .fdot:focus ~ .fdot {
+    background: none;
+}
+.exop .fdbk .fk {
+    opacity: 0;
+    transform: scale(0.5)
+}
+.exop .fdbk .fk:first-child {
+    opacity: 0.7;
+    transform: scale(1)
+}
+.exop .fdot:focus ~ div .fk {
+    opacity: 0;
+    transform: scale(0.5)
+}
+.exop .fdot:nth-of-type(3):focus ~ div .fk:nth-child(1),
+.exop .fdot:nth-of-type(2):focus ~ div .fk:nth-child(2),
+.exop .fdot:nth-of-type(1):focus ~ div .fk:nth-child(3) {
+    opacity: 0.7;
+    transform: scale(1)
+}
+@media (max-width: 500px) {
+    .exop .fdbk .fk {
+        width: 350px;
+        left: calc(50% - 175px);
+    }
+}
+.exop .apicn {
+    position: absolute;
+    font-size: 170px;
+    top: 30px;
+    left: 10px;
+    opacity: .1;
+}
+.exop .apicn2 {
+    top: auto;
+    bottom: 30px;
+    right: 10px;
+    left: auto;
+    transform: scaleX(-1);
+}
+@media (max-width: 1200px) {
+    .exop .apicn {left: 30px;}
+    .exop .apicn2 {right: 30px;left:auto;}
+}
+@media (max-width: 992px) {
+    .exop .apicn {display: none;}
+}
+/* FEEDABACK */
+
+
+/* ADDITIONAL INFORMATION */
+.exop .ainf span.lnr {
+    display: inline-block;
+    color: #584f95;
+    font-size: 5px;
+}
+.exop .ainf span.lnr:before {
+    font-size: 23px;
+}
+.exop .ainf h4 {
+    display: inline-block;
+}
+.exop .ainf-sec {
+    padding-left: 25px;
+    margin: 10px 0;
+}
+.exop .ainf-sec:before {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 10px;
+    top: -6px;
+    background: #6dcff6;
+}
+@media (max-width: 992px) {
+    .exop .ainf-sec:before {
+        top: 0px;
+    }
+    .exop .ainf-sec {
+        margin: 20px 0;
+    }
+}
+/* ADDITIONAL INFORMATION */
+
+
+
+/* FOOTER */
+.exop .ftr {
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 215px;
+}
+.exop .ftr .drkbg {
+    height: 100%;
+}
+.exop .ftrbg {
+    background: url(https://s19.postimg.cc/7c3nrffoj/footerbackground.jpg) no-repeat bottom right #333;
+    opacity: 1;
+    height: 215px;
+}
+.exop .finfo {
+    text-align: left;
+    line-height: 1.6em;
+    font-size: 0.9em;
+}
+.exop .finfo:before {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: -40px;
+    top: 0px;
+    background: #6dcff6;
+}
+.exop a.tst, .tst:hover {
+    width: 170px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    outline: none;
+    display: block;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+}
+.exop a.tst > span {
+    opacity: 0.0000000001;
+    color: #fefefe;
+    display: none;
+}
+.exop .finfo .lnr {
+    opacity: 0.6;
+    font-size: 10px;
+    top: 2px;
+}
+.exop .finfo .lnr:before {
+    font-size: 1.125rem;
+}
+.exop .tbl {
+    display: table;
+}
+.exop .tbl > div {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+@media (max-width: 700px) {
+    .exop .finfo {
+        font-size: 0.8em;
+    }
+    .exop .finfo:before {
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .exop .tbl > div.flogo {
+        display: none;
+    }
+}
+/* FOOTER */
+
+
+
+/* changeable */
+.exop .grdnt {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    background: -moz-linear-gradient(left, rgba(97,89,213,0.55) 0%, rgba(197,63,217,0.55) 100%);
+    background: -webkit-linear-gradient(left, rgba(97,89,213,0.55) 0%,rgba(197,63,217,0.55) 100%);
+    background: linear-gradient(to right, rgba(97,89,213,0.55) 0%,rgba(197,63,217,0.55) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c6159d5', endColorstr='#8cc53fd9',GradientType=1 );
+}
+
+/* accent color 1 */
+.exop .cad .i,
+.exop ul li:before,
+.exop a,
+.exop a:hover,
+.exop a:focus,
+.exop .ainf span.lnr {
+    color: #9556D4;
+}
+.exop .sgal .pictures .left img:nth-child(odd):hover {
+    border-color: #9556D4;
+}
+.exop .fdbk .fk span:last-child:before {
+    background-color: #9556D4;
+}
+/* accent color 1 */
+
+/* accent color 2 */
+.exop .st h3:before,
+.exop .desc h3:before,
+.exop .mlnks a:before,
+.exop .st h3:before, .exop .fdbk h3:before,
+.exop .ainf-sec:before,
+.exop .finfo:before {
+    background: #6dcff6;
+}
+/* accent color 2 */
+
+/* image frame */
+.exop .st .pf {
+    border: 1px solid #333;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 28px 36px -16px black;
+    background: white;
+}
+.exop .st:hover .pf {
+    -webkit-box-shadow: 0 48px 66px -50px #666;
+    -moz-box-shadow: 0 48px 66px -50px #666;
+    box-shadow: 0 48px 66px -50px #666;
+}
+.exop .desc .pf {
+    background: white;
+    padding: 10px;
+    -webkit-box-shadow: 0 13px 26px -11px black;
+    -moz-box-shadow: 0 13px 26px -11px black;
+    box-shadow: 0 13px 26px -11px black;
+}
+/* image frame */
+/* changeable */
+</style>
