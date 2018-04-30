@@ -186,7 +186,7 @@ img {
 
 
 
-/* NEW */
+/* NEW TOP BACKGROUND */
 .exop .lnr {
     line-height: 1;
 }
@@ -196,7 +196,7 @@ img {
     height: 670px;
     position: relative;
     overflow: hidden;
-    background: url(https://s19.postimg.cc/nsajeg9er/Shiny_Nylon_Shorts.jpg) no-repeat top #4c4c4c;
+    background: url(https://s19.postimg.cc/tba2egh1f/topbackground.jpg) no-repeat top #4c4c4c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: -2px;
@@ -345,6 +345,8 @@ img {
     height: 46px;
     margin-left: -60px;
 }
+/* NEW TOP BACKGROUND */
+
 
 /* LOGO WITH RIGHT TOP MENU */
 .exop div.cont {
@@ -514,7 +516,7 @@ img {
     z-index: 2;
 }
 .exop .drkr {
-    background-image: url(https://s19.postimg.cc/xq64yjrer/Shiny_Nylon_Shorts.png);
+    background-image: url(https://s19.postimg.cc/9akw3cepf/shopbannerbackground.jpg);
     opacity: .2;
     position: absolute;
     z-index: 0;
@@ -729,7 +731,7 @@ img {
 
 
 
-/* FEEDABACK */
+/* FEEDBACK (+middlebackground photo -> link e vo view image */
 .exop .fdbk,
 .exop .fbk {
     height: 470px;
