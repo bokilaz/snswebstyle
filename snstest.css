@@ -4,7 +4,7 @@ html { font-size: 100%; }
 
 /* exoplanet.top and bootstrap */
 .exop.container, .exop.container-fluid {
-  font-family: Catamaran, "Open Sans", "Segoe UI", "Calibri Light", Calibri, Verdana, sans-serif;
+  font-family: Titillium Web, "Open Sans", "Segoe UI", "Calibri Light", Calibri, Verdana, sans-serif;
   font-size: 1.125rem;
   line-height: 1.42857143;
   font-weight: 300;
