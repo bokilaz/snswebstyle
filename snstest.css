@@ -4,7 +4,7 @@ html { font-size: 100%; }
 
 /* exoplanet.top and bootstrap */
 .exop.container, .exop.container-fluid {
-  font-family: Catamaran, "Open Sans", "Segoe UI", "Calibri Light", Calibri, Verdana, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 1.125rem;
   line-height: 1.42857143;
   font-weight: 300;
@@ -44,8 +44,8 @@ html { font-size: 100%; }
 }
 .exop ul li:before {
     content: "•";
-    font-weight: 500;
-    font-size: 3em;
+    font-weight: 300;
+    font-size: 2.5em;
     color: #584f95;
     top: -24px;
     left: -25px;
